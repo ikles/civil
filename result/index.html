@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap"
+  rel="stylesheet">  
+
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/select2.min.css">  
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+
+      <div class="slider__wrap">
+        <div class="slider">
+          <div class="slider-for">
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+          <div class="contain">
+            <div class="slider-nav-w">
+              <div class="slider-nav">
+                <div class="slider__nav-slide">Chery 1</div>        
+                <div class="slider__nav-slide">Sollers 2</div>
+                <div class="slider__nav-slide">без каско 3</div>
+                <div class="slider__nav-slide">Chery 4</div>
+                <div class="slider__nav-slide">haval 5</div>
+                <div class="slider__nav-slide">exeed 6</div>
+                <div class="slider__nav-slide">уаз 7</div>
+                <div class="slider__nav-slide">Chery 8</div>
+                <div class="slider__nav-slide">haval 9</div>
+                <div class="slider__nav-slide">Sollers 10</div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+    </header>
+    <main class="main">
+
+
+      <div class="calc none">
+        <div class="contain">
+          <div class="heading-2">Калькулятор расчета лизинга</div>
+          <div class="calc__row calc_init">
+            <div class="calc__col calc__col--left">
+
+              <div class="calc__item">
+                <p class="form-control-static">Стоимость авто</p>
+                <div class="calc__item-row">
+                  <div class="calc__item-wrap">
+                    <input type="text" class="form-control apartment_price-input" value="10 250 000">
+                    <div class="div-control">
+                      <span class="div-control-value"></span>
+                      <span>&nbsp;руб</span>
+                    </div>
+                  </div>
+                  <div class="apartment_price-slider"></div>
+                  <div class="calc__diap">
+                    <span>0,5 млн</span>
+                    <span>20 млн</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc__item">
+                <p class="form-control-static">Первоначальный взнос, руб.</p>
+                <div class="calc__item-row">
+                  <div class="calc__item-wrap">
+                    <input type="text" class="form-control first_payment-input" value="7 000 000">
+                    <div class="div-control">
+                      <span class="div-control-value"></span>
+                      <span>&nbsp;руб</span>
+                    </div>
+                  </div>
+                  <div class="first_payment-slider"></div>
+                  <div class="calc__diap">
+                    <span>5%</span>
+                    <span>50%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc__item">
+                <p class="form-control-static">Срок договора</p>
+                <div class="calc__item-row">
+                  <div class="calc__item-wrap">
+                    <input type="text" class="form-control credit_duration-input" value="17">              
+                    <div class="div-control">
+                      <span class="div-control-value"></span>
+                      <span>&nbsp;мес</span>
+                    </div>
+                  </div>
+                  <div class="credit_duration-slider"></div>
+                  <div class="calc__diap">
+                    <span>7 мес</span>
+                    <span>60 меc</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc__item">
+                <p class="form-control-static">Выкупной платеж</p>
+                <div class="calc__item-row">
+                  <div class="calc__item-wrap">
+                    <input type="text" class="form-control credit_rate-input" value="5">
+                    <div class="div-control">
+                      <span class="div-control-value"></span>
+                      <span>&nbsp;%</span>
+                    </div>
+                  </div>
+                  <div class="credit_rate-slider"></div>
+                  <div class="calc__diap">
+                    <span>1%</span>
+                    <span>5%</span>
+                  </div>
+                </div>
+              </div>
+            </div><!--left-->
+            <div class="calc__col calc__col--right">
+              <div class="calc__item">
+                <p class="form-control-static">Налоговая экономия (до)*</p>
+                <div class="calc__total-w">
+
+                  <div class="calc__item-wrap">
+                    <input type="text" class="form-control credit_sum-input calc__total" value="8 000 000">
+                    <div class="div-control">
+                      <span class="div-control-value"></span>
+                      <span>&nbsp;Р <span> / 36%</span></span>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="credit_sum-slider"></div>
+              </div>
+              <div class="calc__item">
+                <p class="form-control-static">Ежемесячный платеж (от)*</p>
+                <div class="calc__item-wrap">
+                  <input type="text" class="form-control monthly_payment-input calc__total" value="488 431">
+                  <div class="div-control">
+                    <span class="div-control-value"></span>
+                    <span>&nbsp;Р</span>
+                  </div>
+                  <div class="monthly_payment-slider"></div>
+                </div>
+              </div>
+
+              <a href="#order" class="btn calc__btn">Отправить заявку</a>
+              <p class="calc__desc">** Все расчеты приведены в рублях с учетом НДС. Данный расчет не является окончательным и носит справочный характер. Итоговый расчет предоставляется лизингополучателю после выяснений всех аспектов сделки.</p>
+            </div><!--rightt-->
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="news none">
+        <div class="contain">
+          <div class="news__heading heading-2">НОВОСТИ</div>
+          <div class="news__row">         
+            <div class="news__col">
+              <div class="news__item">
+                <a href="" class="news__img"></a>
+                <div class="news__cont">
+                  <div class="news__date">15 декабря 2022</div>
+                  <a href="" class="news__title">
+                    Стартовали продажи <br />
+                    коммерческих <br />
+                    автомобилей Sollers
+                  </a>
+                  <p class="news__p">
+                    А у нас для Вас уже есть скидки
+                    до 290 000 ₽!
+                  </p>
+                  <a href="" class="news__arr-rad"><img src="img/arr-rad-r.png" /></a>
+                </div>
+              </div>
+            </div><!--col-->
+            <div class="news__col">
+              <div class="news__item">
+                <a href="" class="news__img"></a>
+                <div class="news__cont">
+                  <div class="news__date">15 декабря 2022</div>
+                  <a href="" class="news__title">
+                    Стартовали продажи <br />
+                    коммерческих <br />
+                    автомобилей Sollers
+                  </a>
+                  <p class="news__p">
+                    А у нас для Вас уже есть скидки
+                    до 290 000 ₽!
+                  </p>
+                  <a href="" class="news__arr-rad"><img src="img/arr-rad-r.png" /></a>
+                </div>
+              </div>
+            </div><!--col-->
+            <div class="news__col">
+              <div class="news__item">
+                <a href="" class="news__img"></a>
+                <div class="news__cont">
+                  <div class="news__date">15 декабря 2022</div>
+                  <a href="" class="news__title">
+                    Стартовали продажи <br />
+                    коммерческих <br />
+                    автомобилей Sollers
+                  </a>
+                  <p class="news__p">
+                    А у нас для Вас уже есть скидки
+                    до 290 000 ₽!
+                  </p>
+                  <a href="" class="news__arr-rad"><img src="img/arr-rad-r.png" /></a>
+                </div>
+              </div>
+            </div><!--col-->
+            <div class="news__col">
+              <div class="news__item">
+                <a href="" class="news__img"></a>
+                <div class="news__cont">
+                  <div class="news__date">15 декабря 2022</div>
+                  <a href="" class="news__title">
+                    Стартовали продажи <br />
+                    коммерческих <br />
+                    автомобилей Sollers
+                  </a>
+                  <p class="news__p">
+                    А у нас для Вас уже есть скидки
+                    до 290 000 ₽!
+                  </p>
+                  <a href="" class="news__arr-rad"><img src="img/arr-rad-r.png" /></a>
+                </div>
+              </div>
+            </div><!--col-->
+          </div>
+          <a href="" class="all-news">все новости</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="quest none" id="order">
+        <div class="contain">
+          <div class="quest__row">
+            <div class="quest__col-1">
+              <div class="quest__heading heading-2">У Вас появились вопросы?</div>
+              <p class="quest__p">Напишите на<a href="" class="quest__p-link">z@civilleasing.ru</a> или заполните форму</p>
+              <div class="quest__img"><img src="img/questions.png" /></div>
+            </div>
+            <form class="quest__form">
+              <input class="quest__input-text" type="text" placeholder="Имя *" required/>
+              <input class="quest__input-text" type="text" placeholder="Телефон *" required/>
+              <input class="quest__input-text" type="text" placeholder="E-mail *" required/>
+              <input class="quest__input-text" type="text" placeholder="Организация" />
+              <label class="quest__label">
+                <input type="checkbox" checked>              
+                <span class="quest__label-span"></span>
+                <span class="quest__label-span-txt">
+                  Даю свое согласие на обработку<br />
+                  моих персональных данных
+                </span>
+              </label>
+
+              <button class="quest__btn btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="ben none">
+        <div class="contain">
+          <div class="ben__heading heading-2">ПРЕИМУЩЕСТВА</div>
+          <div class="ben__row">
+            <div class="ben__item">
+              <div class="ben__img"><img src="img/adv-1.png" /></div>
+              <div class="ben__title">Думаете, как сэкономить?</div>
+              <p class="ben__p">Лизинговые платежи относятся на расходы и уменьшают налог на прибыль организации. Вы также cможете вернуть до 20% НДС от стоимости лизингового автомобиля.</p>
+            </div>
+            <div class="ben__item">
+              <div class="ben__img"><img src="img/adv-2.png" /></div>
+              <div class="ben__title">Нет времени собирать документы?</div>
+              <p class="ben__p">Вам не придется тратить много времени на сбор необходимых документов – не всегда обязательно предоставлять налоговую декларацию, бухгалтерскую отчетность и справки из банка.</p>
+            </div>
+            <div class="ben__item">
+              <div class="ben__img"><img src="img/adv-3.png" /></div>
+              <div class="ben__title">
+                Транспорт нужен<br />
+                сейчас же?
+              </div>
+              <p class="ben__p">
+                Отлаженные бизнес-процессы позволяют нам существенно сократить срок оформления сделки, а вам максимально быстро получить новый автомобиль. Одобрение может занять 15 минут, а срок оформления сделки – от одного дня.
+              </p>
+            </div>
+            <div class="ben__item">
+              <div class="ben__img"><img src="img/adv-4.png" /></div>
+              <div class="ben__title">Не хотите переплачивать?</div>
+              <p class="ben__p">
+                При наличии у Европлана скидок от втопроизводителей, вы можете приобрести автомобиль без переплат за лизинг, по сути равномерно выплачивая его стоимость в течение всего срока лизинга. Как правило, такие условия
+                доступны на определенные марки автомобилей при сроке лизинга на 1 год.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="leasing none">
+        <div class="contain">
+          <div class="leasing__row">
+            <div class="leasing__col">
+              <div class="leasing__h">
+                Автомобили в лизинг<br />
+                для бизнеса
+              </div>
+              <p class="leasing__p">
+                Лизинг автомобилей — финансовая сделка, при которой не нужно сразу тратить серьезную сумму денег, чтобы получить в распоряжение транспортное средство. Клиент определяет комфортный для себя срок действия договора,
+                вносит аванс и в дальнейшем совершает лизинговые платежи. По окончанию расчетного периода лизингополучатель вносит выкупной платеж, и автомобиль переходит в его собственность — в этом состоит разница между лизингом и
+                простой долгосрочной арендой. А в отличие от покупки за наличные, приобретение авто в лизинг позволяет юрлицу стать владельцем нового автопарка без больших единовременных выплат.
+              </p>
+            </div>
+            <div class="leasing__col">
+              <div class="leasing__h">
+                Преимущества лизинга авто<br />
+                в Цивилизации
+              </div>
+              <p class="leasing__p">
+                Есть и ряд серьезных преимуществ лизинга перед автокредитом: меньший первоначальный взнос (от 0%), отсутствие необходимости залога (в сравнении с нецелевым кредитом), экономия на налогах (лизинговые платежи
+                включаются в себестоимость). Автолизинг также выгоден, когда клиент планирует сменить автомобиль через относительно короткий срок — например, спустя два года. В таком случае по окончанию сделки лизингополучатель не
+                совершает выкуп и не становится владельцем ТС, а просто получает новый автомобиль — также в лизинг. Ежемесячные платежи при лизинге будут ощутимо ниже, чем при автокредите на тот же срок, так что плюсы способа здесь
+                очевидны.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="contain">
+          <div class="faq-heading heading-2">Частые вопросы</div>
+          <div class="accordion-container">
+            <div class="accordion-item">
+              <div class="accordion-header">Лизинговые термины</div>
+              <div class="accordion-content">
+                По окончанию расчетного периода лизингополучатель вносит выкупной платеж, и автомобиль переходит в его собственность — в этом состоит разница между лизингом и простой долгосрочной арендой. А в отличие от покупки за наличные,
+                приобретение авто в лизинг позволяет юрлицу стать владельцем нового автопарка без больших единовременных выплат.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">Кто может стать лизингополучателем?</div>
+              <div class="accordion-content">
+                По окончанию расчетного периода лизингополучатель вносит выкупной платеж, и автомобиль переходит в его собственность — в этом состоит разница между лизингом и простой долгосрочной арендой. А в отличие от покупки за наличные,
+                приобретение авто в лизинг позволяет юрлицу стать владельцем нового автопарка без больших единовременных выплат.
+              </div>
+            </div><!--item-->
+            <div class="accordion-item">
+              <div class="accordion-header">Какие транспортные средства можно приобрести в лизинг?</div>
+              <div class="accordion-content">
+                По окончанию расчетного периода лизингополучатель вносит выкупной платеж, и автомобиль переходит в его собственность — в этом состоит разница между лизингом и простой долгосрочной арендой. А в отличие от покупки за наличные,
+                приобретение авто в лизинг позволяет юрлицу стать владельцем нового автопарка без больших единовременных выплат.
+              </div>
+            </div><!--item-->
+            <div class="accordion-item">
+              <div class="accordion-header">Кто может стать поставщиком в лизинговой сделке?</div>
+              <div class="accordion-content">
+                По окончанию расчетного периода лизингополучатель вносит выкупной платеж, и автомобиль переходит в его собственность — в этом состоит разница между лизингом и простой долгосрочной арендой. А в отличие от покупки за наличные,
+                приобретение авто в лизинг позволяет юрлицу стать владельцем нового автопарка без больших единовременных выплат.
+              </div>
+            </div><!--item-->
+            <div class="accordion-item">
+              <div class="accordion-header">На чьем балансе учитывается лизинговое имущество?</div>
+              <div class="accordion-content">
+                По окончанию расчетного периода лизингополучатель вносит выкупной платеж, и автомобиль переходит в его собственность — в этом состоит разница между лизингом и простой долгосрочной арендой. А в отличие от покупки за наличные,
+                приобретение авто в лизинг позволяет юрлицу стать владельцем нового автопарка без больших единовременных выплат.
+              </div>
+            </div><!--item-->
+            <div class="accordion-item">
+              <div class="accordion-header">Какие документы могут потребоваться для получения решения о финансировании?</div>
+              <div class="accordion-content">
+                По окончанию расчетного периода лизингополучатель вносит выкупной платеж, и автомобиль переходит в его собственность — в этом состоит разница между лизингом и простой долгосрочной арендой. А в отличие от покупки за наличные,
+                приобретение авто в лизинг позволяет юрлицу стать владельцем нового автопарка без больших единовременных выплат.
+              </div>
+            </div><!--item-->
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="foot none">
+      <div class="contain">
+        <div class="foot__row">
+          <div class="foot__col-1">
+            <a href="" class="foot__logo"><img src="img/logo-foot.png" /></a>
+            <div class="foot__conts">
+              <a href="tel:+7 903 017 77 77" class="foot__cont">+7 903 017 77 77</a>
+              <a href="mailto:z@civilleasing.ru" class="foot__cont">z@civilleasing.ru</a>
+            </div>
+            <div class="foot__ad">
+              117638, Москва, ул. Одесская, 2<br />
+              башня С, 17 эт., пом. 4а<br />
+              © ООО “Цивилизация”
+            </div>
+            <div class="foot__cond-w">
+              <a href="" class="foot__cond">Обработка персональных данных</a>
+              <a href="" class="foot__cond">Общие условия договора лизинга</a>
+            </div>
+          </div>
+          <div class="foot__map-w">
+            <div class="foot__map">
+              <img src="img/map-foot.jpg" />
+              <div class="marker"><img src="img/marker.png" alt=""></div>
+            </div>
+          </div>
+          <div class="foot__col-3">
+            <div class="foot__menu-w">
+              <div class="foot__menu-h">Программы</div>
+              <ul>
+                <li><a href="">Лизинг легковых автомобилей</a></li>
+                <li><a href="">Легкий коммерческий транспорт</a></li>
+                <li><a href="">Грузовой транспорт</a></li>
+                <li><a href="">Спецтехника</a></li>
+                <li><a href="">Мотоциклы</a></li>
+                <li><a href="">Лизинг такси</a></li>
+                <li><a href="">Лизинг Авто с пробегом</a></li>
+                <li><a href="">Возвратный лизинг</a></li>
+                <li><a href="">Часто задаваемые вопросы</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot__col-4">
+            <div class="foot__menu-w">
+              <div class="foot__menu-h">О компании</div>
+              <ul>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Карьера</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Реквизиты</a></li>
+                <li><a href="">Отзыв доверенностей</a></li>
+              </ul>
+            </div>
+            <div class="foot__menu-w">
+              <div class="foot__menu-h">Каталог техники</div>
+              <ul>
+                <li><a href="">Легковые</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+  </div>
+  <!--wrapper-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script src="js/slick.js"></script>
+<!-- <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
+  <script async src="js/placemark.js"></script>   -->
+<!-- <script src="js/nouislider.js"></script>
+  <script src="js/wNumb.min.js"></script> -->
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/select2.min.js"></script>  
+  <script src="js/mortgageCalculator.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+
