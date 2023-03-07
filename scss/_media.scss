@@ -1,3 +1,13 @@
+.contain {
+  max-width: 1346px;
+}
+
+@media (max-width : 1367px) {
+  .contain {
+    max-width: 1170px
+  }    
+}
+
 @media only screen and (max-width : 1199px) {
   .contain {
     max-width: 970px

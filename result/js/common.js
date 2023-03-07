@@ -1,7 +1,17 @@
 jQuery(document).ready(function( $ ) {
 
 
+ $('.burger').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('open');
+    $('.col-mnu__wrap').toggleClass('open');
+    $('.overlay').fadeIn();
+  });
 
+  $('.overlay, .mnu-close').click(function () {    
+    $('.col-mnu__wrap').removeClass('open');
+    $('.overlay').fadeOut();
+  });
 
 
 
@@ -100,7 +110,16 @@ $('.eye-3').click(function (e) {
    asNavFor: '.slider-for',
    dots: false,
    centerMode: false,
-   
+   responsive: [
+
+   {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 5
+    }
+  },
+
+  ]
  });
 
 
@@ -173,8 +192,8 @@ $('.eye-3').click(function (e) {
 
 
 
-$('.credit_sum-input').next('.div-control').find('.div-control-value').html($('.credit_sum-input').val());
-        $('.monthly_payment-input').next('.div-control').find('.div-control-value').html($('.monthly_payment-input').val());
+  $('.credit_sum-input').next('.div-control').find('.div-control-value').html($('.credit_sum-input').val());
+  $('.monthly_payment-input').next('.div-control').find('.div-control-value').html($('.monthly_payment-input').val());
 
 
 
