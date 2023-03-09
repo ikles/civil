@@ -2376,12 +2376,10 @@ input[type="text"].form-control.calc__total {
 	}
 	.head__top {
 		background-color: #f1592a;
-		padding: 40px 0 14px 0;
+		padding: 18px 0 14px 0;
 		position: relative;
 	}
 	.burger {
-		width: 25px;
-		height: 25px;
 		background: url("../img/burger.png") no-repeat center;
 		color: #FFF;
 		font-size: 8px;
@@ -2408,14 +2406,20 @@ input[type="text"].form-control.calc__total {
 	.head__phone {
 		font-size: 0;
 		background: url("../img/phone-mob.png") no-repeat center;
-		width: 23px;
-		height: 23px;
 	}
 	.head__priv-cab {
-		width: 23px;
-		height: 23px;
 		background: url("../img/user-mob.png") no-repeat center;
 		margin-left: 13px;
+	}
+	.head__phone,
+	.head__priv-cab,
+	.burger {
+		width: 29px;
+		height: 29px;
+		background-size: 29px;
+		-webkit-flex: none;
+		    -ms-flex: none;
+		        flex: none;
 	}
 	.col-mnu__wrap {
 		position: absolute;
@@ -3047,6 +3051,9 @@ input[type="text"].form-control.calc__total {
 	}
 	.news__img {
 		height: 103px;
+	}
+	.head__logo {
+		width: 133px;
 	}
 }
 

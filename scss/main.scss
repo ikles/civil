@@ -1490,14 +1490,14 @@ input[type="text"].form-control {
   }
   .head__top {
     background-color: #f1592a;
-    padding: 40px 0 14px 0;
+    padding: 18px 0 14px 0;
     position: relative;    
   }
 
 
-  .burger {     
-    width: 25px;
-    height: 25px;
+
+
+  .burger {         
     background: url("../img/burger.png") $nr center;    
     color: #FFF;
     font-size: 8px;
@@ -1517,18 +1517,24 @@ input[type="text"].form-control {
   .head__phone {
     font-size: 0;
     background: url("../img/phone-mob.png") $nr center;
-    width: 23px;
-    height: 23px;
+    
   }
-  .head__priv-cab {
-   width: 23px;
-   height: 23px; 
+  .head__priv-cab {    
    background: url("../img/user-mob.png") $nr center;
    margin-left: 13px;
  }
 
+ .head__phone,
+ .head__priv-cab,
+ .burger {
+  width: 29px;
+  height: 29px;  
+  background-size: 29px;  
+          flex: none;
+}
 
- .col-mnu__wrap {    
+
+.col-mnu__wrap {    
   position: absolute;
   right: 0;
   top: 0;
@@ -2059,7 +2065,7 @@ input[type="text"].form-control {
   .accordion-header:before {
     width: 5px;
     height: 4px;    
-            background-size: 5px;
+    background-size: 5px;
   }
   .accordion-content {
     font-size: 9px;
@@ -2119,6 +2125,9 @@ input[type="text"].form-control {
   }
   .slider__nav-slide {
 
+  }
+  .head__logo {
+    width: 133px;
   }
 
 }

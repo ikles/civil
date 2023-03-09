@@ -299,9 +299,7 @@ $('body').keydown(function (e) {
       console.log(self);
 
     }
-  })
-
-
+  });
 });
 
 
