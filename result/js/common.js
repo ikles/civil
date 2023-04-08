@@ -20,10 +20,6 @@ jQuery(document).ready(function( $ ) {
 
 
 
-
-
-
-
 /************************************/
 
 /*$('.wrapper').prepend('<span class="eye-3"></span>');
@@ -136,7 +132,7 @@ $('body:not(.active)').css('background-image', "unset");
         arrows: false
       }
     },
-     {
+    {
       breakpoint: 576,
       settings: {
         slidesToShow: 3,
@@ -164,7 +160,33 @@ $('body:not(.active)').css('background-image', "unset");
     ]
   });
 
-  
+
+  function tabs(element) {    
+    $(element).find('.tabs__list-item').click(function () {  
+
+      if ($("#cart__tabs").length) {
+        var target = $("#cart__tabs").offset().top;
+        $("html, body").animate({scrollTop: target}, 800);
+        $(element).find('.tabs__content-list')
+        .hide()
+        .slideDown(500)        
+      }
+
+      $(element).find('.tabs__list-item').removeClass('active');      
+      $(this).addClass('active');
+      let num = $(this).index();
+      $(element).find('.tabs__content-list-item').removeClass('active');
+      $(element).find('.tabs__content-list-item').eq(num).addClass('active');          
+      $(element).find('.tabs__content-list')        
+        .attr('class', 'tabs__content-list')
+        .addClass('act-'+(num+1));
+    });
+  }
+
+  tabs('.cart__tabs');
+  tabs('.faqp__tabs');
+
+
 
 
   $('.slider-nav .slick-slide[data-slick-index="0"]').addClass('act');

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog</title>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/select2.min.css">  
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="inner-page">
+  <div class="wrapper none">
+    <header class="header header--inner">
+                <div class="head__top">
+            <div class="contain">
+              <div class="head__row">
+                <a href="index.html" class="head__logo">
+                  <img class="hide-767" src="img/logo-head.png" />
+                  <img class="show-767" src="img/logo-mob.png" />
+                </a>
+                <form class="head__form hide-767">
+                  <input class="head__input-text" type="text" placeholder="Поиск" />
+                  <button></button>
+                </form>
+                <a href="" class="head__phone">+7 903 017 77 77</a>
+                <!-- <a href="" class="head__priv-btn">Вход</a> -->
+                <a href="" class="head__priv-cab black hide-767"><span class="head__priv-cab-txt">Личный кабинет</span></a>
+                <a href="" class="head__priv-cab show-767"></a>
+                <div class="burger show-767">
+                  <span>Меню</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-mnu__wrap">
+              <div class="contain">
+                <div class="col-mnu"> 
+                 <form class="head__form show-767">
+                  <input class="head__input-text" type="text" placeholder="Поиск" />
+                  <button></button>
+                </form>               
+                <ul class="head__menu-ul">
+                  <li><a href="">О компании</a></li>
+                  <li><a href=""> Каталог автомобилей </a></li>
+                  <li class="active"><a href="">Спецпредложения </a></li>
+                  <li><a href="">Программы </a></li>
+                  <li><a href="">Сервисы </a></li>
+                  <li><a href=""> Контакты</a></li>
+                </ul>
+                <div class="show-767 mnu__icons-wrap">
+                  <div class="mnu__icons">
+                    <a class="mnu__icon">
+                      <div class="mnu__icon-img">
+                        <img src="img/mnu-icon-1.png" alt="">
+                      </div>
+                      <div class="mnu__icon-txt">
+                        Специальные<br />
+                        предложения
+                      </div>
+                    </a>
+                    <a class="mnu__icon">
+                      <div class="mnu__icon-img">
+                        <img src="img/mnu-icon-2.png" alt="">
+                      </div>
+                      <div class="mnu__icon-txt">
+                        Заявка<br />
+                        на лизинг
+                      </div>
+                    </a>
+                    <a class="mnu__icon">
+                      <div class="mnu__icon-img">
+                        <img src="img/mnu-icon-3.png" alt="">
+                      </div>
+                      <div class="mnu__icon-txt">Контакты</div>
+                    </a>
+                    <a class="mnu__icon">
+                      <div class="mnu__icon-img">
+                        <img src="img/mnu-icon-4.png" alt="">
+                      </div>
+                      <div class="mnu__icon-txt">
+                        Личный<br />
+                        кабинет
+                      </div>                      
+                    </a>
+                  </div>
+                  <span class="mnu-close">Закрыть</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main class="main">
+      <section class="cat">
+        <div class="contain">
+          <ul class="bread__ul">
+            <li class="bread__li"><a href="" class="bread__link">Главная</a></li>
+            <li class="bread__li"><a href="" class="bread__link">Каталог</a></li>
+            <li class="bread__li"><span>Jetta VA3 Jetta VA3 Aggressive 1.5 112hp 5MT</span></li>
+          </ul>
+          <div class="h2">Новые автомобили в лизинг</div>
+          <form>
+            <div class="catactions__row">
+              <div class="border__select catactions__select">
+                <select>
+                  <option value="Марка">Марка</option>
+                  <option value="Nissan">Nissan</option>
+                  <option value="Lada">Lada</option>
+                </select>
+              </div>
+              <div class="border__select catactions__select">
+                <select>
+                  <option value="Модель">Модель</option>
+                  <option value="Nissan">Nissan</option>
+                  <option value="Lada">Lada</option>
+                </select>
+              </div>
+              <button class="catactions__btn btn"> Показать 2345 вариантов</button>
+              <a href="" class="catactions__filter">Фильтр</a>            
+            </div>
+          </form>
+          <div class="cat__w">
+            <div class="cat__row">
+             <div class="cat__item">
+  <div class="cat__name">Jetta</div>
+  <a href="" class="cat__img">
+    <img src="img/car.jpg" />                  
+  </a>
+  <div class="cat__charact">
+    <div class="cat__charact-model">Jetta VA3 седан</div>
+    <div class="cat__spec">Aggressive 1.5 112hp 5MT</div>
+    <div class="cat__eng">бензин, 112 л.с.</div>
+  </div>
+  <div class="cat__price">
+    <div class="cat__price-row">
+      <div class="cat__price-text"><strong>Ежемесячный платёж (от)</strong></div>
+      <div class="cat__price-text"><strong>130 000 р.</strong></div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">Стоимость автомобиля (от)</div>
+      <div class="cat__price-text">1 300 000 р.</div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">Экономия по налогу на прибыль (до)</div>
+      <div class="cat__price-text">52 000 р.</div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">НДС к возмещению из бюджета (до)</div>
+      <div class="cat__price-text">52 000 р</div>
+    </div>
+  </div>
+  <a href="" class="cat__btn btn">Рассчитать график</a>
+</div>
+             <div class="cat__item">
+  <div class="cat__name">Jetta</div>
+  <a href="" class="cat__img">
+    <img src="img/car.jpg" />                  
+  </a>
+  <div class="cat__charact">
+    <div class="cat__charact-model">Jetta VA3 седан</div>
+    <div class="cat__spec">Aggressive 1.5 112hp 5MT</div>
+    <div class="cat__eng">бензин, 112 л.с.</div>
+  </div>
+  <div class="cat__price">
+    <div class="cat__price-row">
+      <div class="cat__price-text"><strong>Ежемесячный платёж (от)</strong></div>
+      <div class="cat__price-text"><strong>130 000 р.</strong></div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">Стоимость автомобиля (от)</div>
+      <div class="cat__price-text">1 300 000 р.</div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">Экономия по налогу на прибыль (до)</div>
+      <div class="cat__price-text">52 000 р.</div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">НДС к возмещению из бюджета (до)</div>
+      <div class="cat__price-text">52 000 р</div>
+    </div>
+  </div>
+  <a href="" class="cat__btn btn">Рассчитать график</a>
+</div>
+             <div class="cat__item">
+  <div class="cat__name">Jetta</div>
+  <a href="" class="cat__img">
+    <img src="img/car.jpg" />                  
+  </a>
+  <div class="cat__charact">
+    <div class="cat__charact-model">Jetta VA3 седан</div>
+    <div class="cat__spec">Aggressive 1.5 112hp 5MT</div>
+    <div class="cat__eng">бензин, 112 л.с.</div>
+  </div>
+  <div class="cat__price">
+    <div class="cat__price-row">
+      <div class="cat__price-text"><strong>Ежемесячный платёж (от)</strong></div>
+      <div class="cat__price-text"><strong>130 000 р.</strong></div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">Стоимость автомобиля (от)</div>
+      <div class="cat__price-text">1 300 000 р.</div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">Экономия по налогу на прибыль (до)</div>
+      <div class="cat__price-text">52 000 р.</div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">НДС к возмещению из бюджета (до)</div>
+      <div class="cat__price-text">52 000 р</div>
+    </div>
+  </div>
+  <a href="" class="cat__btn btn">Рассчитать график</a>
+</div>
+             <div class="cat__item">
+  <div class="cat__name">Jetta</div>
+  <a href="" class="cat__img">
+    <img src="img/car.jpg" />                  
+  </a>
+  <div class="cat__charact">
+    <div class="cat__charact-model">Jetta VA3 седан</div>
+    <div class="cat__spec">Aggressive 1.5 112hp 5MT</div>
+    <div class="cat__eng">бензин, 112 л.с.</div>
+  </div>
+  <div class="cat__price">
+    <div class="cat__price-row">
+      <div class="cat__price-text"><strong>Ежемесячный платёж (от)</strong></div>
+      <div class="cat__price-text"><strong>130 000 р.</strong></div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">Стоимость автомобиля (от)</div>
+      <div class="cat__price-text">1 300 000 р.</div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">Экономия по налогу на прибыль (до)</div>
+      <div class="cat__price-text">52 000 р.</div>
+    </div>
+    <div class="cat__price-row">
+      <div class="cat__price-text">НДС к возмещению из бюджета (до)</div>
+      <div class="cat__price-text">52 000 р</div>
+    </div>
+  </div>
+  <a href="" class="cat__btn btn">Рассчитать график</a>
+</div>
+           </div>
+           <a href="" class="more">Показать еще</a>
+         </div>
+         <div class="h2">КАТАЛОГ АВТОМОБИЛЕЙ</div>
+         <div class="catlist">
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-1.png" /></span><span class="catlist__name">Audi</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-2.png" /></span><span class="catlist__name">BMW</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-3.png" /></span><span class="catlist__name">Cadillac</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-4.png" /></span><span class="catlist__name">Changan</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-5.png" /></span><span class="catlist__name">Chery</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-6.png" /></span><span class="catlist__name">Chevrolet</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-7.png" /></span><span class="catlist__name">Citroen</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-8.png" /></span><span class="catlist__name">DongFeng</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-9.png" /></span><span class="catlist__name">Evolute</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-10.png" /></span><span class="catlist__name">Exeed</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-11.png" /></span><span class="catlist__name">FAW</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-12.png" /></span><span class="catlist__name">FIAT</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-13.png" /></span><span class="catlist__name">Ford</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-14.png" /></span><span class="catlist__name">GAC</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-15.png" /></span><span class="catlist__name">GAZ</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-16.png" /></span><span class="catlist__name">Geely</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-17.png" /></span><span class="catlist__name">Genesis</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-18.png" /></span><span class="catlist__name">Great Wall</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-19.png" /></span><span class="catlist__name">Haval</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-20.png" /></span><span class="catlist__name">Honda</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-21.png" /></span><span class="catlist__name">Hyundai</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-22.png" /></span><span class="catlist__name">INFINITI</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-23.png" /></span><span class="catlist__name">ISUZU</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-24.png" /></span><span class="catlist__name">JAC</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-25.png" /></span><span class="catlist__name">Jaguar</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-26.png" /></span><span class="catlist__name">Jeep</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-27.png" /></span><span class="catlist__name">Jetta</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-28.png" /></span><span class="catlist__name">KIA</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-29.png" /></span><span class="catlist__name">Lada</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-30.png" /></span><span class="catlist__name">Land Rover</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-31.png" /></span><span class="catlist__name">Lexus</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-32.png" /></span><span class="catlist__name">Mazda</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-33.png" /></span><span class="catlist__name">Mercedes-Benz</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-34.png" /></span><span class="catlist__name">MINI</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-35.png" /></span><span class="catlist__name">Mitsubishi</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-36.png" /></span><span class="catlist__name">Moskvich</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-37.png" /></span><span class="catlist__name">Nissan</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-38.png" /></span><span class="catlist__name">OMODA</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-39.png" /></span><span class="catlist__name">Opel</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-40.png" /></span><span class="catlist__name">Peugeot</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-41.png" /></span><span class="catlist__name">Polestar</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-42.png" /></span><span class="catlist__name">Porshe</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-43.png" /></span><span class="catlist__name">Renault</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-44.png" /></span><span class="catlist__name">Skoda</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-45.png" /></span><span class="catlist__name">Skywell</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-46.png" /></span><span class="catlist__name">Sollers</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-47.png" /></span><span class="catlist__name">Subaru</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-48.png" /></span><span class="catlist__name">Suzuki</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-49.png" /></span><span class="catlist__name">Tank</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-50.png" /></span><span class="catlist__name">Toyota</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-51.png" /></span><span class="catlist__name">UAZ</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-52.png" /></span><span class="catlist__name">Volkswagen</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-53.png" /></span><span class="catlist__name">Volvo</span>
+            </a>
+          </div>
+          <div class="catlist__col">
+            <a href="" class="catlist__item">
+              <span class="catlist__img-w"><img src="img/brand-54.png" /></span><span class="catlist__name">Voyah</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="catquest__w">
+          <div class="quest none" id="order">
+      <div class="contain">
+        <div class="quest__row">
+          <div class="quest__col-1">
+
+            <div class="quest__heading heading-2">У Вас появились вопросы?</div>
+            <p>Напишите на <a href="" >z@civilleasing.ru</a> или заполните форму</p>
+
+            <div class="quest__img"><img src="img/questions.png" /></div>
+          </div>
+          <form class="quest__form">
+            <input class="quest__input-text" type="text" placeholder="Имя *" required/>
+            <input class="quest__input-text" type="text" placeholder="Телефон *" required/>
+            <input class="quest__input-text" type="text" placeholder="E-mail *" required/>
+            <input class="quest__input-text" type="text" placeholder="Организация" />
+            <label class="quest__label">
+              <input type="checkbox" checked>              
+              <span class="quest__label-span"></span>
+              <span class="quest__label-span-txt">
+                Даю свое согласие на обработку<br />
+                моих персональных данных
+              </span>
+            </label>
+
+            <button class="quest__btn btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="foot none">
+      <div class="contain">
+        <div class="foot__row">
+          <div class="foot__col-1">
+            <a href="index.html" class="foot__logo">            
+              <img class="hide-767" src="img/logo-foot.png" />
+              <img class="show-767" src="img/logo-foot-mob.png" />
+            </a>
+            <div class="foot__conts">
+              <a href="tel:+7 903 017 77 77" class="foot__cont">+7 903 017 77 77</a>
+              <a href="mailto:z@civilleasing.ru" class="foot__cont">z@civilleasing.ru</a>
+            </div>
+            <div class="foot__ad">
+              117638, Москва, ул. Одесская, 2<br />
+              башня С, 17 эт., пом. 4а<br />
+              © ООО “Цивилизация”
+            </div>
+            <div class="foot__cond-w">
+              <a href="" class="foot__cond">Обработка персональных данных</a>
+              <a href="" class="foot__cond">Общие условия договора лизинга</a>
+            </div>
+          </div>
+          <div class="foot__map-w">
+            <div class="foot__map">
+              <img src="img/map-foot.jpg" />
+              <div class="marker"><img src="img/marker.png" alt=""></div>
+            </div>
+          </div>
+          <div class="foot__col-3">
+            <div class="foot__menu-w">
+              <div class="foot__menu-h">Программы</div>
+              <ul>
+                <li><a href="">Лизинг легковых автомобилей</a></li>
+                <li><a href="">Легкий коммерческий транспорт</a></li>
+                <li><a href="">Грузовой транспорт</a></li>
+                <li><a href="">Спецтехника</a></li>
+                <li><a href="">Мотоциклы</a></li>
+                <li><a href="">Лизинг такси</a></li>
+                <li><a href="">Лизинг Авто с пробегом</a></li>
+                <li><a href="">Возвратный лизинг</a></li>
+                <li><a href="">Часто задаваемые вопросы</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot__col-4">
+            <div class="foot__menu-w">
+              <div class="foot__menu-h">О компании</div>
+              <ul>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Карьера</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Реквизиты</a></li>
+                <li><a href="">Отзыв доверенностей</a></li>
+              </ul>
+            </div>
+            <div class="foot__menu-w">
+              <div class="foot__menu-h">Каталог техники</div>
+              <ul>
+                <li><a href="">Легковые</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-480 foot__icons">
+        <div class="mnu__icons">
+          <a class="mnu__icon">
+            <div class="mnu__icon-img">
+              <img src="img/mnu-icon-1.png" alt="">
+            </div>
+            <div class="mnu__icon-txt">
+              Специальные<br>
+              предложения
+            </div>
+          </a>
+          <a class="mnu__icon">
+            <div class="mnu__icon-img">
+              <img src="img/mnu-icon-2.png" alt="">
+            </div>
+            <div class="mnu__icon-txt">
+              Заявка<br>
+              на лизинг
+            </div>
+          </a>
+          <a class="mnu__icon">
+            <div class="mnu__icon-img">
+              <img src="img/mnu-icon-3.png" alt="">
+            </div>
+            <div class="mnu__icon-txt">Контакты</div>
+          </a>
+          <a class="mnu__icon">
+            <div class="mnu__icon-img">
+              <img src="img/mnu-icon-4.png" alt="">
+            </div>
+            <div class="mnu__icon-txt">
+              Личный<br>
+              кабинет
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer> 
+</div>
+<!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<!-- <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
+  <script async src="js/placemark.js"></script>   -->
+<!-- <script src="js/nouislider.js"></script>
+  <script src="js/wNumb.min.js"></script> -->
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/select2.min.js"></script>  
+  <script src="js/mortgageCalculator.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+

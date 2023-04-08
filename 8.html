@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voprosy</title>  
+  @@include('var/_styless.html')
+</head>
+<body class="inner-page">
+  <div class="wrapper none">
+    <header class="header header--inner">
+      @@include('var/_header.html')
+    </header>
+    <main class="main">
+
+      <section class="faqp">
+       <div class="contain">
+        <ul class="bread__ul">
+          <li class="bread__li"><a href="" class="bread__link">Главная</a></li>          
+          <li class="bread__li"><span>часто задаваемые вопросы</span></li>
+        </ul>
+        <div class="h2">часто задаваемые вопросы</div>
+
+        <div class="tabs faqp__tabs">
+          <ul class="tabs__list">
+            <li class="tabs__list-item active">О лизинге</li>
+            <li class="tabs__list-item">Оформление лизинга</li>  
+            <li class="tabs__list-item">Сопровождение лизинга</li>  
+          </ul>
+          <ul class="tabs__content-list">
+            <li class="tabs__content-list-item active">
+              <div class="faqp__accordion-container accordion-container">
+                <div class="accordion-item">
+                  <div class="accordion-header">Выставление счет-фактур</div>
+                  <div class="accordion-content">
+                    Счета-фактуры выставляются в соответствии с графиком лизинговых платежей. Счета-фактуры в электронном виде загружаются в Личный кабинет вашей организации на 5-й рабочий день месяца, следующего за отчетным. Оригиналы счетов-фактур направляются заказным письмом Почтой России на почтовый адрес, указанный в договоре лизинга. По договоренности сторон выставление счетов-фактур, может происходить в электронном виде через систему электронного документооборота "СКБ Контур" (Диадок).
+                    Досрочный выкуп по договору лизинга
+                    Изменение лизингополучателя по договору лизинга на третье лицо (цессия)
+                    Оплата лизинговых платежей
+                    Оплата лизинговых платежей третьим лицом
+                    Оплата штрафов ГИБДД/АМПП/МАДИ
+                    Регистрация транспорта в ГИБДД/Гостехнадзоре
+                    Частично-досрочное погашение по договору лизинга
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li class="tabs__content-list-item">22</li>  
+            <li class="tabs__content-list-item">33</li>  
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="catquest__w">
+      @@include('var/_quest.html')
+    </div>
+  </main>
+  @@include('var/_footer.html')
+</div>
+<!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>07_Programmy</title>  
+  @@include('var/_styless.html')
+</head>
+<body class="inner-page">
+  <div class="wrapper none">
+    <header class="header header--inner">
+      @@include('var/_header.html')
+    </header>
+    <main class="main">
+
+      <section class="lizavto">
+       <div class="contain">
+        <ul class="bread__ul">
+          <li class="bread__li"><a href="" class="bread__link">Главная</a></li>          
+          <li class="bread__li"><span>Лизинговые программы</span></li>
+        </ul>
+        <div class="h2">лизинг легковых автомобилей</div>
+      </div>
+      <div class="lizavto__contain contain">
+        <div class="lizavto__row">
+         <a href="" class="spec-off__item">
+          <span class="spec-off__title">
+            Расширенная программа финансирования автомобилей <br/>
+            с пробегом
+          </span>
+          <span class="spec-off__img-w"> 
+            <img src="img/spec-off-3.jpg" class="spec-off__img">
+            <span class="spec-off__text">Теперь предыдущий владелец не имеет значения</span>
+          </span>
+          <span class="spec-off__arr-w">
+            <span class="spec-off__arr"></span>
+          </span>
+        </a>
+        <a href="" class="spec-off__item">
+          <span class="spec-off__title">
+            Выгодное предложение на автомобили ГАЗ
+          </span>
+          <span class="spec-off__img-w"> 
+            <img src="img/spec-off-2.jpg" class="spec-off__img">
+            <span class="spec-off__text">Теперь предыдущий владелец не имеет значения</span>
+          </span>
+          <span class="spec-off__arr-w">
+            <span class="spec-off__arr"></span>
+          </span>
+        </a>
+        <a href="" class="spec-off__item">
+          <span class="spec-off__title">
+            Jetta. Выгодно
+          </span>
+          <span class="spec-off__img-w"> 
+            <img src="img/spec-off-3.jpg" class="spec-off__img">
+            <span class="spec-off__text">Теперь предыдущий владелец не имеет значения</span>
+          </span>
+          <span class="spec-off__arr-w">
+            <span class="spec-off__arr"></span>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <section class="lizoffers">
+    <div class="contain">
+      <div class="h4">Лизинговые предложения</div>
+      <div class="lizoffers__row">      
+        <div class="lizoffers__item">
+          <div class="lizoffers__img-w">
+            <img src="img/lizoffers-img-1.png" alt="">
+          </div>
+          <div class="lizoffers__content">
+            <div class="lizoffers__title">Параметры финансирования</div>
+            <ul class="lizoffers__list">
+              <li>‒ Аванс от 0%</li>
+              <li>‒ Срок от 12 до 60 месяцев</li>
+              <li>‒ Решение в день обращения</li>
+            </ul>
+          </div>
+        </div>
+        <div class="lizoffers__item">
+          <div class="lizoffers__img-w">
+            <img src="img/lizoffers-img-2.png" alt="">
+          </div>
+          <div class="lizoffers__content">
+            <div class="lizoffers__title">Финансовые преимущества</div>
+            <ul class="lizoffers__list">            
+              <li>‒ Возврат 20% НДС от стоимости автомобиля</li>
+              <li>‒ Включение в расходы лизинговых платежей</li>
+              <li>‒ Любые графики под Ваши цели</li>
+              <li>
+              </ul>
+            </div>
+          </div>
+          <div class="lizoffers__item">
+            <div class="lizoffers__img-w">
+              <img src="img/lizoffers-img-3.png" alt="">
+            </div>
+            <div class="lizoffers__content">
+              <div class="lizoffers__title">Условия</div>
+              <ul class="lizoffers__list">
+                <li>‒ Вам от 3 месяцев</li>
+                <li>‒ Без залога</li>
+                <li>‒ Минимум документов</li>              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newautos">
+      <div class="contain">
+        <div class="h2">Новые автомобили в лизинг</div>
+        <form>
+          <div class="catactions__row">
+            <div class="border__select catactions__select">
+              <select>
+                <option value="Марка">Марка</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Lada">Lada</option>
+              </select>
+            </div>
+            <div class="border__select catactions__select">
+              <select>
+                <option value="Модель">Модель</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Lada">Lada</option>
+              </select>
+            </div>
+            <button class="catactions__btn btn"> Показать 2345 вариантов</button>
+            <a href="" class="catactions__filter">Фильтр</a>            
+          </div>
+        </form>
+        <div class="cat__w">
+          <div class="cat__row">
+           @@include('var/_cat__item.html')
+           @@include('var/_cat__item.html')
+           @@include('var/_cat__item.html')
+           @@include('var/_cat__item.html')
+         </div>
+         <a href="" class="more">Показать еще</a>
+       </div>
+     </div>
+   </section>
+
+   <div class="catquest__w">
+    @@include('var/_quest.html')
+  </div>
+</main>
+@@include('var/_footer.html')
+</div>
+<!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>
+
