@@ -2197,12 +2197,10 @@ input[type="text"].form-control {
   padding-top: 51px;
 }
 
-
-
 .bread__ul {
   display: flex;
   flex-wrap: wrap;  
-  margin-bottom: 48px;
+  margin-bottom: 38px;
   color: rgb(102, 153, 204);
   font-size: 17px;  
   transform: translateY(13px);
@@ -2276,7 +2274,8 @@ input[type="text"].form-control {
   margin-left: -12.5px;
   margin-right: -12.5px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+  align-items: flex-end;
 }
 
 .spec-off__item {
@@ -2309,8 +2308,7 @@ input[type="text"].form-control {
   font-weight: 700;
   display: flex;
   margin-bottom: 15px;
-  line-height: 1.1;
-  height: 65px;
+  line-height: 1.1;  
   align-items: flex-end;
 }
 
@@ -2459,7 +2457,7 @@ input[type="text"].form-control {
   .h2 {
     font-size: 25px;
   }
-  
+
 }//575
 
 @media (max-width : 480px) {
@@ -3187,7 +3185,7 @@ input[type="text"].form-control {
     margin-left: 0;
     width: 100%;
     margin-top: 35px;
-    
+
   }
   .featured__col,
   .related__col {
@@ -3279,7 +3277,7 @@ input[type="text"].form-control {
       }      
     }
   }
-  
+
   .tabs__content-list {        
     &.act-2 {
       order: 25;
@@ -3642,6 +3640,9 @@ input[type="text"].form-control {
   }
 }//359
 
+.faqp {
+  padding-bottom: 60px;
+}
 
 .faqp__tabs {
   margin-top: 35px;
@@ -3653,15 +3654,13 @@ input[type="text"].form-control {
     width: 100%;
     max-width: 381px;
     display: inline-flex;    
-    justify-content: center;    
     align-items: center;
     border: 1px solid #cccccc;
     color: black;
     font-size: 17px;
     font-weight: 400;
-    height: 53px;
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 53px;    
+    padding: 0 26px;    
     border-radius: 5px;    
     transition: background-color 0.5s;
     &:not(:last-child) {
@@ -3692,23 +3691,298 @@ input[type="text"].form-control {
 }//tabs
 
 .faqp__accordion-container {
-  margin-top: 34px;
+  margin-top: 44px;
   .accordion-item {
     border: none;
+    padding: 5px 0;
     &:first-child {
       border: none;
     }
   }
   .accordion-header {
     font-size: 20px;
+    padding-left: 33px;
+    &:before {      
+      background-image: url('../img/arr.png');
+    }
+    &.active-header {
+      &:before {
+        transform: rotate(180deg);        
+      }
+    }
   }
   .accordion-content {
     margin-top: 20px;
+    margin-bottom: 20px;
     line-height: 1.5;
     font-size: 20px;
+    padding-left: 33px;
   }
-
 }//acc
+
+@media (max-width : 991px) {
+  .faqp__tabs {
+    .tabs__list {    
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .tabs__list-item {
+      width: 100%;
+      max-width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    }
+  }
+}//991
+
+@media (max-width : 480px) {
+  .faqp__accordion-container .accordion-header:before {
+    width: 10px;
+    height: 10px;  
+    background-size: 10px;
+    top: 5px;
+  }
+  .faqp__accordion-container .accordion-header {
+    font-size: 16px;
+    padding-left: 25px;
+  }
+  .faqp__accordion-container .accordion-content {
+    padding-left: 25px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .faqp__accordion-container {
+    margin-top: 24px;
+  }
+  .faqp {
+    padding-bottom: 30px;
+  }
+  .faqp__tabs .tabs__list-item {
+    font-size: 16px;
+    padding: 0 13px;
+    height: 43px;    
+    border-radius: 10px;
+  }
+  .faqp__tabs {
+    margin-top: 20px;
+  }
+}//480
+
+.services {
+  padding-top: 37px;
+  padding-bottom: 20px;
+}
+
+.services__row {
+  display: flex;  
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-top: 35px;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+.services__col {
+  width: 33.333%;
+  padding: 0 12px;
+  margin-bottom: 46px;
+}
+
+.services__item {
+  width: 100%;
+  display: block;s
+  &:hover {
+    text-decoration: none;
+  }
+  .spec-off__img-w {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 3 / 2; 
+    height: auto;
+    img {
+     max-height: 80%;
+   }
+   @media (max-width : 991px) {
+     background-color: #ff6633;
+   }
+ }
+}
+
+
+
+
+
+.insurance {  
+  padding-bottom: 97px;
+  font-size: 20px;
+  p {
+    line-height: 1.5;
+  }
+}
+
+
+
+
+
+.insurance__row {
+  margin-top: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.insurance__col {
+  width: 25%;
+  margin-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.insurance__item {
+  height: 131px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.roadhelp {
+  margin-top: 70px;
+  table {    
+    width: 100%;
+    tr {
+      &:not(:last-child) {
+        td {
+          border-bottom: 1px solid #999;
+        }
+      }
+    }
+
+    td {    
+      padding: 18px 5px;
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 0.022em;
+      color: #000000;      
+      &:first-child {
+        padding-right: 81px;
+        padding-left: 0;
+      }    
+
+    }
+
+    thead {        
+      td {
+
+        border-bottom: 1px solid #999;
+        
+      }
+    }
+
+
+
+    tbody {
+      td {
+
+      }
+    }
+  }
+} 
+
+
+
+
+.roadhelp__block {
+  width: 100px;
+  height: 37px;    
+  flex: none;
+  background-color: rgb(212, 212, 212);
+  &.orange {  
+    background-color: rgb(255, 102, 51);  
+  }
+}
+
+
+@media (max-width : 1199px) {
+  .insurance__item {
+   aspect-ratio: 3 / 2;
+   width: 100%;
+   height: auto;
+   img {
+     max-width: 80%;
+   }
+ }
+}//1199
+
+@media (max-width : 991px) {
+  .roadhelp table td {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .roadhelp {
+    margin-top: 20px;
+  }
+  .services__col {
+    width: 50%;
+    margin-bottom: 26px;
+  }
+  .services {
+    padding-bottom: 0;
+  }
+  .insurance {
+    padding-bottom: 47px;
+  }
+}//991
+
+
+
+@media (max-width : 767px) {
+  .insurance {
+    font-size: 17px;
+  }
+  .insurance__col {
+    width: 33.333%;
+  }
+  .roadhelp__block {
+    width: 43px;
+    height: 14px;
+  }
+  .roadhelp table td {
+    font-size: 15px;
+    padding: 13px 10px;
+  }
+  .roadhelp table td:first-child {
+    padding-right: 21px;
+  }
+}//767
+
+@media (max-width : 640px) {
+  .roadhelp__block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .roadhelp {
+    table {
+      tr {
+        
+      }
+      td {    
+        
+        &:first-child {
+          
+        }
+      }  
+    }
+  } 
+
+}
 
 @import "_after-styless";
 
