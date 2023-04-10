@@ -2984,6 +2984,10 @@ input[type="text"].form-control {
   font-weight: 700;
 }
 
+.tabs__list-item {
+  cursor: pointer;
+}
+
 .cart__tabs {  
   .tabs__list {
     width: 100%;
@@ -3792,7 +3796,7 @@ input[type="text"].form-control {
 
 .services__item {
   width: 100%;
-  display: block;s
+  display: block;
   &:hover {
     text-decoration: none;
   }
@@ -3981,8 +3985,238 @@ input[type="text"].form-control {
       }  
     }
   } 
+}//640
 
+@media (max-width : 575px) {
+  .roadhelp__block {
+    width: 30px;
+    height: 9px;
+  }
+  .roadhelp table td {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .roadhelp table td:first-child {
+    padding-right: 8px;
+  }
+  .insurance {
+    padding-bottom: 27px;
+  }
+.services__row {
+  margin-top: 22px;
 }
+.services {
+  padding-top: 15px;
+}
+}//575
+
+@media (max-width : 480px) {
+.services__col {
+  width: 100%;
+}
+.insurance__row {
+  margin-left: -7px;
+  margin-right: -7px;
+}
+.insurance__col {
+  width: 50%;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-bottom: 10px;
+  }
+.insurance__item {
+  aspect-ratio: 4 / 1.8;
+}
+.insurance {
+  font-size: 16px;
+}
+.services__item .spec-off__img-w img {
+  max-height: 60%;
+}
+.services__item {
+  .spec-off__title {
+    margin-bottom: 4px;
+  }
+}
+.services__col {
+  margin-bottom: 20px;
+}
+}//480
+
+
+
+
+.acc {
+  width: 100%;
+  max-width: 395px;
+  padding: 22px 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+          justify-content: flex-start;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 15;  
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 19px;  
+            opacity: 0;
+  visibility: hidden;  
+          transition: 0.5s;
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.head__priv-cab._orange {
+  background-image: url('../img/priv-cab-or.png');
+  order: -1;
+  .head__priv-cab-txt {
+    color: $or;
+  }
+}
+
+.head__priv-cab-txt {
+}
+
+.acc__lbl {
+  margin-top: 37px;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.022em;
+  color: rgb(0, 0, 0);
+  margin-bottom: 21px;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+
+.tab {
+  height: 40px;
+  background-color: rgb(241, 89, 42);
+  display: flex;
+  align-items: center;  
+  padding: 0 26px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 2.5;
+  font-weight: 700;
+  letter-spacing: 0.022em;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 18px;
+  background-color: #f4f4f1;
+&.active {  
+  background-color: rgb(241, 89, 42);  
+  color: rgb(255, 255, 255);  
+}
+}
+
+.acc__form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.acc__tabs {
+  width: 100%;
+}
+
+.acc__input-text {
+  height: 40px;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;  
+  border-radius: 10px;  
+  font-size: 15px;
+  letter-spacing: 0.022em;
+  color: rgb(0, 0, 0);
+  margin-bottom: 16px;
+  border: 1px solid #666;
+  &:focus,
+  &:active {
+    border: 1px solid #666 $i;
+  }
+}
+
+.acc__control-row {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acc__forget-pass {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.022em;
+  color: rgb(241, 89, 42);
+}
+
+.acc__btn {
+  height: 40px;
+  background-color: rgb(241, 89, 42);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 37px;
+  padding-right: 37px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  line-height: 2.5;
+  font-weight: 700;
+}
+
+@media (max-width : 575px) {
+.head__priv-cab._orange {
+  display: none;
+}
+.acc {
+  padding: 36px 23px 26px 23px;
+  height: 100vh;
+  overflow: auto;
+  max-width: 100%;
+  
+}
+.acc__lbl {
+  margin-top: 0;
+}
+.tab {
+  margin-bottom: 8px;
+  height: 45px;
+  font-weight: 400;
+          justify-content: center;
+}
+.acc__form {
+  margin-top: 30px;
+}
+.acc__input-text {
+  height: 45px;
+  margin-bottom: 10px;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+}
+.acc__btn {
+  height: 45px;
+  font-size: 14px;
+  text-transform: none;
+}
+.acc__forget-pass {
+  font-size: 14px;
+}
+.acc__close {
+  margin-top: auto;
+  width: 100%;
+  height: 45px;
+  background: url("../img/acc-close.png") $nr bottom center;
+}
+}//
+
 
 @import "_after-styless";
 
